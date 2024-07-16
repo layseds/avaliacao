@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="portifolio/portifolio.html">Portfólio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Um pouquinho sobre a gente...</h1>
+            <img src="images/grupo.jpg" alt="Nosso grupo" class="imagem-retangular">
+            <p>Somos uma equipe de estudantes do curso de Técnico em Desenvolvimento de Sistemas apaixonadas por tecnologia e design. Estamos no início de nossa jornada no mundo da programação e design web, mas estamos entusiasmadas em aprender e criar projetos interessantes.</p>
+        </section>
+
+        <section>
+            <h2>Membros da Equipe</h2>
+            <article>
+                <h3>Maria Vitória</h3>
+                <img src="images/mavi.JPG" alt="Maria Vitória" class="imagem-redonda">
+                <p>Oi, eu sou a Maria Vitória! Tenho um grande interesse em desenvolvimento web e estou aprendendo HTML e CSS. No meu tempo livre, gosto de fazer várias coisas que me deixam feliz. Adoro ler romances e mistérios, mergulhando em histórias cativantes. Na cozinha, me divirto preparando pratos caseiros, especialmente sobremesas. Nos momentos de lazer, assisto comédias e animações, e escuto muita música, explorando diferentes estilos musicais. Também tenho um pequeno jardim em casa que adoro cuidar.</p>
+            </article>
+
+            <article>
+                <h3>Layse Sousa</h3>
+                <img src="images/layse.jpg" alt="Layse de Sousa" class="imagem-redonda">
+                <p>Oi, eu sou a Layse Sousa! Adoro explorar cafés aconchegantes pela cidade e encontrar lugares tranquilos para ler meus livros favoritos de ficção científica são algumas das coisas que mais gosto de fazer. Além de programar, tenho um interesse crescente por fotografia; adoro capturar momentos especiais e descobrir beleza em lugares comuns. Nas trilhas ao ar livre, encontro inspiração na natureza para minhas futuras criações.</p>
+            </article>
+
+            <article>
+                <h3>Graziely Lima</h3>
+                <img src="images/grazy.jpg" alt="Graziely" class="imagem-redonda">
+                <p>Oi, eu sou a Graziely Lima! Estou começando a aprender programação com um foco especial em HTML e CSS. No meu tempo livre, adoro assistir animes e me envolver nas suas histórias e personagens. Sou apaixonada por música e curto uma variedade de estilos, do rock à música clássica. Tenho dois gatos e uma cachorra que são minha alegria diária. Cozinhar é uma das minhas grandes paixões, e experimento de tudo na cozinha, mas meu prato especial, sempre elogiado, é o creme de batata com carne. Adoro o processo de preparar uma refeição deliciosa e compartilhá-la com meus animais de estimação enquanto escuto minhas músicas favoritas.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Formulário de Contato</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+        
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmation" class="confirmation">
+                Sua mensagem foi enviada com sucesso!
+            </div>
+        
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    document.getElementById('confirmation').style.display = 'block';
+                });
+            </script>
+        </section>
+
+        <section>
+            <h2>Buscar Vídeos no YouTube</h2>
+            <form action="https://www.youtube.com/results" method="get" target="_blank">
+                <label for="search">Buscar:</label>
+                <input type="text" id="search" name="search_query" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+    </main>
+
+    <section>
+        <h2>Nossa Playlist do Spotify de Trabalho</h2>
+        <div class="spotify-playlist">
+            <iframe src="https://open.spotify.com/embed/playlist/6psOjbod1bK5ruogAX8SL3?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Equipe</p>
+    </footer>
+</body>
+</html>
